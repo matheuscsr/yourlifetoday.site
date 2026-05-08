@@ -4,15 +4,65 @@
 <html class="onsite">
     <head>
 
+		<!-- ============================================================
+         ⚡ VTURB PRELOAD — Prioridade máxima de carregamento do player
+         Estes preloads garantem que o player VTurb baixe ANTES de
+         qualquer outro script (incluindo Meta Pixel e UTMify).
+         NÃO REMOVER — afeta diretamente a velocidade de exibição da VSL.
+         ============================================================ -->
 		<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
-<link rel="preload" href="https://scripts.converteai.net/85efeeb2-8a29-4095-9fd0-e7bb984234a9/players/69fc21eb4eea68f3954c2b78/v4/player.js" as="script">
-<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/85efeeb2-8a29-4095-9fd0-e7bb984234a9/69fc21b24382e85c8c8a7742/main.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://api.vturb.com.br">
+		<link rel="preload" href="https://scripts.converteai.net/85efeeb2-8a29-4095-9fd0-e7bb984234a9/players/69fc21eb4eea68f3954c2b78/v4/player.js" as="script">
+		<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+		<link rel="preload" href="https://cdn.converteai.net/85efeeb2-8a29-4095-9fd0-e7bb984234a9/69fc21b24382e85c8c8a7742/main.m3u8" as="fetch">
+		<link rel="dns-prefetch" href="https://cdn.converteai.net">
+		<link rel="dns-prefetch" href="https://scripts.converteai.net">
+		<link rel="dns-prefetch" href="https://images.converteai.net">
+		<link rel="dns-prefetch" href="https://api.vturb.com.br">
 
+		<!-- ============================================================
+         ✅ META PIXEL — CLIENT-SIDE
+         Pixel ID: 1272279878449001
+         Dispara: PageView automático e ViewContent ao iniciar VSL
+         ============================================================ -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1272279878449001');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1272279878449001&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <!-- ============================================================
+         🔧 UTMify — Captura e propaga UTMs para checkout
+         ============================================================ -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      async
+      defer
+    ></script>
+
+    <!-- ============================================================
+         ✅ UTMify Pixel — Tracking server-side (CAPI)
+         UTMify Pixel ID: 69fc263009d009c304f5543b
+         ============================================================ -->
+    <script>
+        window.pixelId = "69fc263009d009c304f5543b";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
 
 
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
